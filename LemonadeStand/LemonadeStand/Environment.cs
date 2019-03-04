@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LemonadeStand
 {
-    public class Environment
+    public class Environment : Game
     {
     }
 }

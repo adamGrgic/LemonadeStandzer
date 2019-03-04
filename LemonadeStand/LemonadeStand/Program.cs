@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-// My thought process for Lemonade -- Pyramid Scheme Edition
+// Lemonade -- Pyramid Scheme Edition
 
 // User runs console
 // Console asks user for name and if they want to play the game 
@@ -32,6 +32,8 @@ namespace LemonadeStand
     {
         static void Main(string[] args)
         {
+            Game game = new Game();
+            game.DisplayMainMenu();
         }
     }
 }

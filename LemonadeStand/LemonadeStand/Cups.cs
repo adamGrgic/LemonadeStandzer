@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LemonadeStand
 {
-    public class Cups
+    public class Cups : Inventory
     {
     }
 }
