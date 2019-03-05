@@ -33,9 +33,10 @@ namespace LemonadeStand
         static void Main(string[] args)
         {
             Game game = new Game();
+            Inventory inventory = new Inventory();
             game.DisplayIntroduction();
-            game.DisplayMainMenu();
-            game.GamePlayLooper();
+            inventory.DisplayMainMenu();
+            inventory.PurchaseSupplies();
         }
     }
 }

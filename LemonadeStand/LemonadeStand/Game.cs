@@ -11,14 +11,11 @@ namespace LemonadeStand
         public string MainMenu;
         public string Name;
         public string Introduction;
-        public int Money = 20;
-        public int Lemons = 0;
-        public int Cups = 0;
-        public int IceCubes = 0;
-        public int Employees = 0;
-        public int Sugar = 0;
+        
         public string PurchaseVariable;
         public string ItemCheck;
+        public string NewQuantity;
+        public int NewNewQuantity;
        
 
         // Constructor 
@@ -26,13 +23,10 @@ namespace LemonadeStand
         {
             this.MainMenu = MainMenu;
             this.Name = Name;
-            this.Money = Money;
-            this.Lemons = Lemons;
-            this.Cups = Cups;
-            this.IceCubes = IceCubes;
-            this.Employees = Employees;
-            this.Sugar = Sugar;
+            
             this.PurchaseVariable = PurchaseVariable;
+            this.NewQuantity = NewQuantity;
+            this.NewNewQuantity = NewNewQuantity;
         }
 
 
@@ -40,53 +34,35 @@ namespace LemonadeStand
         public void DisplayIntroduction()
         {
             Console.WriteLine("Welcome, entrepreneur, to Lemonade Stand -- Pyramid Scheme Edition! ");
-            Console.WriteLine("Uncle Sam (codename Slimey Sam) has enlisted you as his newest business owner in a growing chain of lemonade stands.");
-            Console.WriteLine("What is your name?");
+            Console.WriteLine("Hello! My name is Lucky Lemons App and I am messaging you on behalf of our owner, Sam" +
+                " (codename Slimey Sam), who has enlisted you as his newest business owner in a growing chain of lemonade stands." +
+                " Currently on the rise on the West Coast, Sam has asked you to open up your own lemonade stand under the Lucky Lemons name in Milwaukee, Wisconsin." +
+                " ");
+            Console.WriteLine("If you accept, please enter your name below.");
             string Name = Console.ReadLine();
-            Console.WriteLine("Glad to have you on board, " + Name + ", Now let's get down to business.");
-            Console.WriteLine("The following are some items that you will need to purchase: lemons, sugar, ice cubes, and last but not least, cups.");
+            Console.WriteLine("Glad to have you on board, " + Name + ", Now let's get down to business." +
+                "The rules of the venture as follows: you are given a $100 to open your glamorous new lemonade stand. " +
+                "With that $100, you are expected to purchase: lemons, sugar, ice cubes, and last but not least, cups." +
+                "Unlike most full-time jobs, you will be expected to work 9-5, 7 days a week. " +
+                "If you're money falls below $0, you will lose and be unable to pass go! Wait, wrong game. In this game you just lose....your soul.");
             Console.WriteLine("Press enter when you are ready to begin, " + Name);
             Console.ReadLine();
            
         }
 
         
-        public void CheckInventory(int Money, int Lemons, int Cups, int IceCubes, int Sugar)
-        {
-            // When you get a chance, setup a for loop. 
-            Console.WriteLine("You have " + Money + " dollars");
-            Console.WriteLine("You have " + Lemons + " lemons");
-            Console.WriteLine("You have " + Cups + " cups");
-            Console.WriteLine("You have " + Sugar + " grams of sugar");
-            Console.WriteLine("You have " + IceCubes + " cubes of ice");
-            Console.WriteLine("Press Enter if these values are correct.");
-            Console.ReadLine();
+        
+
+        
+
+        
+
+        //public void GamePlayLooper()
+        //{
+        //    DisplayMainMenu();
             
-        }
 
-        public void DisplayMainMenu()
-        {
-            Console.WriteLine("Below is an automated message from the Lemon Seeds App, declaring your available items.");
-            CheckInventory(Money, Lemons, Cups, IceCubes, Sugar);
-            
-        }
-
-        public void PurchaseSupplies() { 
-}
-
-        public void GamePlayLooper()
-        {
-            DisplayMainMenu();
-            Console.WriteLine("Do you wish to purchase more supplies? Please enter yes or no.");
-            string InventoryCheck = Console.ReadLine();
-            if (InventoryCheck == "yes")
-            {
-                Console.WriteLine("Which item do you wish to purchase more of? Please enter only one value at a time.");
-                string ItemCheck = Console.ReadLine();
-                int.Parse(ItemCheck);
-                Console.WriteLine(ItemCheck);
-
-            }
+        //    }
             //    switch (ItemCheck)
             //    {
             //        case Lemons:
@@ -105,9 +81,5 @@ namespace LemonadeStand
 
         }
 
-        public void PlayGame()
-        {
-            
-        }
-    }
+        
 }

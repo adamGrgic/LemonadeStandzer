@@ -48,6 +48,7 @@
     <Compile Include="Employees.cs" />
     <Compile Include="Environment.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="Gameplay.cs" />
     <Compile Include="Ice.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Lemon.cs" />
