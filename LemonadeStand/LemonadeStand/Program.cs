@@ -32,11 +32,16 @@ namespace LemonadeStand
     {
         static void Main(string[] args)
         {
+            // Instantiating Classes 
             Game game = new Game();
             Inventory inventory = new Inventory();
+            Gameplay gameplay = new Gameplay();
+
+            // Flow
             game.DisplayIntroduction();
             inventory.DisplayMainMenu();
             inventory.PurchaseSupplies();
+            gameplay.StartingConditions();
         }
     }
 }
