@@ -5,7 +5,4 @@ using System.Text;
 
 namespace LemonadeStand
 {
-    public class Environment : Game
-    {
-    }
 }

@@ -35,13 +35,16 @@ namespace LemonadeStand
             // Instantiating Classes 
             Game game = new Game();
             Inventory inventory = new Inventory();
-            Gameplay gameplay = new Gameplay();
+            //Gameplay gameplay = new Gameplay();
+            Weather weather = new Weather();
 
             // Flow
-            game.DisplayIntroduction();
-            inventory.DisplayMainMenu();
-            inventory.PurchaseSupplies();
-            gameplay.StartingConditions();
+            //game.DisplayIntroduction();
+            //inventory.DisplayMainMenu();
+            //inventory.PurchaseSupplies();
+            // gameplay.StartingConditions();
+
+            weather.DetermineWeatherWeek();
         }
     }
 }

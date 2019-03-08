@@ -7,5 +7,12 @@ namespace LemonadeStand
 {
     public class Lemon : Inventory
     {
+        // Member Variables
+
+
+        // Constructors
+
+
+        // Member Methods 
     }
 }

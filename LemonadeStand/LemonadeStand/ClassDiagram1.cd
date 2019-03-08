@@ -3,7 +3,7 @@
   <Class Name="LemonadeStand.Player">
     <Position X="0.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -38,22 +38,15 @@
   <Class Name="LemonadeStand.Customers">
     <Position X="3" Y="7.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAEAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Customers.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LemonadeStand.Weather">
     <Position X="6.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ACAABAABAAAAAAAAAAAAAABIAAAAAAAAAAkAAAAIAIA=</HashCode>
       <FileName>Weather.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="LemonadeStand.Environment">
-    <Position X="6.5" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Environment.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LemonadeStand.Game" Collapsed="true">
@@ -66,7 +59,7 @@
   <Class Name="LemonadeStand.Gameplay">
     <Position X="0.5" Y="13" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgIAAAAAAAAAAAAAAAAAAQAAAAEAAAAA=</HashCode>
+      <HashCode>AyAAAAAAAAAAiIAAAAAAAAAAAAAAAAABQAAAAEAAAAE=</HashCode>
       <FileName>Gameplay.cs</FileName>
     </TypeIdentifier>
   </Class>
