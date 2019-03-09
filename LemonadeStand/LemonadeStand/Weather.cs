@@ -44,17 +44,18 @@ namespace LemonadeStand
             return WeatherForecastOptions;
         }
 
-        public string DetermineWeatherDay()
+        public string DetermineWeatherDay(Random rnd)
         {
-            Random rnd = new Random();
+        
+
             WeatherVariable = rnd.Next(5);
             forecastOption = WeatherForecastOptions[WeatherVariable];
             return forecastOption;
         }
 
-        public int DetermineTemperatureDay()
+        public int DetermineTemperatureDay(Random rnd)
         { 
-            Random rnd = new Random();
+            
             WeatherVariable = rnd.Next(101);
             return WeatherVariable;
         }
@@ -62,15 +63,24 @@ namespace LemonadeStand
       
         public List<string> DetermineWeatherWeek()
         {
+            Random rnd = new Random();
             Console.WriteLine("Gathering the weather data for you...");
             Console.WriteLine("Gathering...");
             Console.WriteLine("Gathering...");
             Console.WriteLine("Gathering...");
             Console.WriteLine("Gathering and...  gathering and...");
+            CreateWeatherForecastOptions();
             CreateDaysOfTheWeek();
+            
             for (int i = 0; i < 7; i++)
             {
-                WeeklyWeather.Add($"Day: {DaysOfTheWeek[i]} Forecast: {DetermineWeatherDay()} Temperature: {DetermineTemperatureDay()}");
+                WeeklyWeather.Add($"Day: {DaysOfTheWeek[i]} " +
+                    $"Forecast: {DetermineWeatherDay(rnd)} " +
+                    $"Temperature: {DetermineTemperatureDay(rnd)}");
+            }
+            foreach (string day in WeeklyWeather)
+            {
+                Console.WriteLine(day);
             }
             Console.ReadLine();
             return WeeklyWeather;
