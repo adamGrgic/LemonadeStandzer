@@ -37,14 +37,16 @@ namespace LemonadeStand
             Inventory inventory = new Inventory();
             //Gameplay gameplay = new Gameplay();
             Weather weather = new Weather();
-
+            Customers customer = new Customers();
             // Flow
-            //game.DisplayIntroduction();
-            //inventory.DisplayMainMenu();
-            //inventory.PurchaseSupplies();
+            game.DisplayIntroduction();
+            inventory.DisplayMainMenu();
+            inventory.PurchaseSupplies();
             // gameplay.StartingConditions();
 
             weather.DetermineWeatherWeek();
+
+            
         }
     }
 }
